@@ -13,6 +13,13 @@ cdef extern from "gsl/gsl_eigen.h":
   ctypedef struct gsl_eigen_gensymmv_workspace
   ctypedef struct gsl_eigen_herm_workspace
   ctypedef struct gsl_eigen_hermv_workspace
+  ctypedef struct gsl_eigen_francis_workspace
+  ctypedef struct gsl_eigen_nonsymm_workspace
+  ctypedef struct gsl_eigen_nonsymmv_workspace
+  ctypedef struct gsl_eigen_genherm_workspace
+  ctypedef struct gsl_eigen_genhermv_workspace
+  ctypedef struct gsl_eigen_gen_workspace
+  ctypedef struct gsl_eigen_genv_workspace
 
   # symm
   gsl_eigen_symm_workspace *  gsl_eigen_symm_alloc(size_t n) nogil
